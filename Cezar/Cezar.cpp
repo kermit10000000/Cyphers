@@ -12,7 +12,11 @@
 
 Cezar::Cezar(std::string Text, int16_t Shift)
             : Text{Text}, Shift{Shift} {
+    if(Shift<0) {
+        Shift=0;
+    }   
 }
+
 
 void Cezar::Cezar() {
     this -> Text = " ";
@@ -31,7 +35,8 @@ void Cezar::setShift(int Shift) {
         this -> Shift = Shift;
     }        
 }
-
+    this -> Shift = Shift;
+}
 void Cezar::calculations(bool isEncryption){
     New_text="";
     /* variable moving the numbers to interval [0-25]

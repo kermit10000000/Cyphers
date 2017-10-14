@@ -44,6 +44,7 @@ public:
     Cezar(std::string Text,
         int16_t Shift,
     );
+
 /**
  * @brief Default constructor of Cezar code object
  * just to avoid errors if someone would like to 
