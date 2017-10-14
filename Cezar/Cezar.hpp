@@ -45,6 +45,13 @@ public:
         int16_t Shift,
     );
 
+/**
+ * @brief Default constructor of Cezar code object
+ * just to avoid errors if someone would like to 
+ * encrypt/decrypt without giving text or/and shift
+ * 
+ */
+    Cezar();
     
  /**
   * @brief Encrypt the message using Cezar method 
