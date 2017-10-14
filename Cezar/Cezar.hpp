@@ -70,8 +70,12 @@ public:
     void decryptMessage();
     
 /**
-  * @brief Setter for param Shift
+  * @brief calculations to shift each letter
+  * isEncryption is to state either we are 
+  * calculating for encryption or decryption
   *
+  * @param[in] isEncryption
+  * 
   * @return nothing
   */
     void calculations(bool isEncryption);
