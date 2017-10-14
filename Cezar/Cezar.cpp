@@ -7,7 +7,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  *
  */
-//TODO: well what if we get like a and minus shift or z and plus shift, we have to somehow comeback 
+
 #include "Cezar.hpp"
 
 Cezar::Cezar(std::string Text, int16_t Shift)
