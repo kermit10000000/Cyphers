@@ -44,7 +44,7 @@ public:
 /**
  * @brief Default constructor of ROT13 code object
  * just to avoid errors if someone would like to 
- * encrypt/decrypt without giving text or/and shift
+ * encrypt/decrypt without giving text
  * 
  */
     ROT13();
