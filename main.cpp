@@ -19,5 +19,9 @@ int main(int argc, char *argv[]) {
     cezar_encryption.setText("Rovz sxmywsxq.");
     cezar_encryption.setShift(10);
     cezar_encryption.decryptMessage();
+    ROT13 rot13_encryption("Rot13 is similar to Cezar encryption.");
+    rot13_encryption.encryptMessage();
+    rot13_encryption.setText("Ohg vg nyjnlf fuvsg yrggref ol 13 naq qrpelcgvba vf qbhoyr rapelcgvba.");
+    rot13_encryption.decryptMessage();
     return 0;
 }    
