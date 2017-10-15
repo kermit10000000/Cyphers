@@ -35,8 +35,6 @@ public:
 /**
  * @brief Constructor of ROT13 code object
  * text is the text to either cypher or decypher
- * shift is number describing the number to shift each
- *       letter to either cypher or decypher it
  * 
  * @param[in] text
  */
