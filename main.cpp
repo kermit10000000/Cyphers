@@ -11,7 +11,8 @@
 
 
 #include Cezar.hpp
-
+#include XOR.hpp
+#include ROT13.hpp
 
 int main(int argc, char *argv[]) {
     Cezar cezar_encryption("Army is marching with 20 thousand horses. Please send some support + boats.",20);
@@ -19,9 +20,16 @@ int main(int argc, char *argv[]) {
     cezar_encryption.setText("Rovz sxmywsxq.");
     cezar_encryption.setShift(10);
     cezar_encryption.decryptMessage();
+    
     ROT13 rot13_encryption("Rot13 is similar to Cezar encryption.");
     rot13_encryption.encryptMessage();
     rot13_encryption.setText("Ohg vg nyjnlf fuvsg yrggref ol 13 naq qrpelcgvba vf qbhoyr rapelcgvba.");
     rot13_encryption.decryptMessage();
+    
+    XOR xor_encryption("XOR encryption is same way as decryption",20);
+    xor_encryption.encryptMessage();
+    xor_encryption.setText("Je#tf#tbmw#vpf#[LQ#`zskfq#lmoz#lm#ofwwfqp#wkf#boskbafw#ofwwfq#mvnafq#nvpw#af#nvowjsoj`jwz#le#wkf#mvnafq#1#+ojhf#25#lq#01*#bmg#wkf#hfz#nvpw#af#ofpp#wkbm#wkf#boskbafw#ofmdwk-#");
+    xor_encryption.setKey(3);
+    xor_encryption.decryptMessage();
     return 0;
 }    
