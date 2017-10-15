@@ -10,8 +10,8 @@
 
 #include "ROT13.hpp"
 
-ROT13::ROT13(std::string Text, int16_t Shift)
-            : Text{Text}, Shift{Shift} {
+ROT13::ROT13(std::string Text)
+            : Text{Text} {
 }
 
 void ROT13::ROT13() {
