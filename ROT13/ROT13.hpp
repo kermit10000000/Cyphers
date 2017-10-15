@@ -38,8 +38,7 @@ public:
  * 
  * @param[in] text
  */
-    ROT13(std::string Text,
-    );
+    ROT13(std::string Text);
 
 /**
  * @brief Default constructor of ROT13 code object
