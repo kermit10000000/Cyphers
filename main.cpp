@@ -31,5 +31,12 @@ int main(int argc, char *argv[]) {
     xor_encryption.setText("Je#tf#tbmw#vpf#[LQ#`zskfq#lmoz#lm#ofwwfqp#wkf#boskbafw#ofwwfq#mvnafq#nvpw#af#nvowjsoj`jwz#le#wkf#mvnafq#1#+ojhf#25#lq#01*#bmg#wkf#hfz#nvpw#af#ofpp#wkbm#wkf#boskbafw#ofmdwk-#");
     xor_encryption.setKey(3);
     xor_encryption.decryptMessage();
+    
+    VisionRE visionRE_encryption("VisionRE use a string Key to encrypt messages","thisIsKey");
+    visionRE_encryption.encryptMessage();
+    visionRE_encryption.setText("Xk wy dyuz qvhzvv lzpe Qkqej tttoaji gx iyoz.");
+    visionRE_encryption.setKey("Progress");
+    visionRE_encryption.decryptMessage();
+    
     return 0;
 }    
