@@ -18,7 +18,7 @@ void ROT13::ROT13() {
     this -> Text = " ";
 }
 
-void ROT13::setText(string Text) {
+void ROT13::setText(std::string Text) {
     this -> Text = Text;
 }
 
@@ -54,11 +54,13 @@ void ROT13::calculations(bool isEncryption){
             New_text += letter;
     }   
 }
+
 void ROT13::encryptMessage() {
     calculations(1);
     std::cout << "Text before encryption: " << Text << std::endl;
     std::cout << "Text after encryption: " << New_text << std::endl;
 }
+
 void ROT13::decryptMessage() {
     calculations(0);
     std::cout << "Text before decryption: " << Text << std::endl;
