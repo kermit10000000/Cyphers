@@ -13,6 +13,7 @@
 #include Cezar.hpp
 #include XOR.hpp
 #include ROT13.hpp
+#include VisionRE.hpp
 
 int main(int argc, char *argv[]) {
     Cezar cezar_encryption("Army is marching with 20 thousand horses. Please send some support + boats.",20);

@@ -42,8 +42,7 @@ public:
  * @param[in] shift
  */
     Cezar(std::string Text,
-        int16_t Shift,
-    );
+        int16_t Shift);
 
 /**
  * @brief Default constructor of Cezar code object
