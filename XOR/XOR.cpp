@@ -23,11 +23,11 @@ void XOR::XOR() {
     this -> Key = 0;
 }
 
-void XOR::setText(string Text) {
+void XOR::setText(std::string Text) {
     this -> Text = Text;
 }
     
-void XOR::setKey(int Key) {
+void XOR::setKey(int8_t  Key) {
     if(Key<0) {
         Key=0;
         std::cout << "Key can not be negative. Setting Key to 0." << std::endl;
@@ -36,20 +36,21 @@ void XOR::setKey(int Key) {
         this -> Key = Key;
     }        
 }
-    this -> Key = Key;
-}
-void XOR::calculations(){
+
+void XOR::calculations() {
     New_text="";
     for(char letter : Text){
         letter^= Key;
         New_text += letter;
     }   
 }
+
 void XOR::encryptMessage() {
     calculations();
     std::cout << "Text before encryption: " << Text << std::endl;
     std::cout << "Text after encryption: " << New_text << std::endl;
 }
+
 void XOR::decryptMessage() {
     calculations();
     std::cout << "Text before decryption: " << Text << std::endl;
