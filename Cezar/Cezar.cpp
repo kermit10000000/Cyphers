@@ -23,11 +23,11 @@ void Cezar::Cezar() {
     this -> Shift = 0;
 }
 
-void Cezar::setText(string Text) {
+void Cezar::setText(std::string Text) {
     this -> Text = Text;
 }
     
-void Cezar::setShift(int Shift) {
+void Cezar::setShift(int16_t Shift) {
     if(Shift<0) {
         Shift=0;
     }
@@ -35,9 +35,8 @@ void Cezar::setShift(int Shift) {
         this -> Shift = Shift;
     }        
 }
-    this -> Shift = Shift;
-}
-void Cezar::calculations(bool isEncryption){
+
+void Cezar::calculations(bool isEncryption) {
     New_text="";
     /* variable moving the numbers to interval [0-25]
     *  just for the calculations and the moving back to
@@ -69,11 +68,13 @@ void Cezar::calculations(bool isEncryption){
             New_text += letter;
     }   
 }
+
 void Cezar::encryptMessage() {
     calculations(1);
     std::cout << "Text before encryption: " << Text << std::endl;
     std::cout << "Text after encryption: " << New_text << std::endl;
 }
+
 void Cezar::decryptMessage() {
     calculations(0);
     std::cout << "Text before decryption: " << Text << std::endl;
