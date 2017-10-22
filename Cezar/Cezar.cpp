@@ -18,7 +18,7 @@ Cezar::Cezar(std::string Text, int16_t Shift)
 }
 
 
-void Cezar::Cezar() {
+Cezar::Cezar() {
     this -> Text = " ";
     this -> Shift = 0;
 }

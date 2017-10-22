@@ -12,15 +12,12 @@
 
 VisionRE::VisionRE(std::string Text, std::string Key)
             : Text{Text}, Key{Key} {
-    if(Key<0) {
-        Key=0;
-    }   
 }
 
 
-void VisionRE::VisionRE() {
+VisionRE::VisionRE() {
     this -> Text = " ";
-    this -> Key = 0;
+    this -> Key = "";
 }
 
 void VisionRE::setText(std::string Text) {
@@ -28,12 +25,7 @@ void VisionRE::setText(std::string Text) {
 }
     
 void VisionRE::setKey(std::string Key) {
-    if(Key<0) {
-        Key=0;
-    }
-    else { 
         this -> Key = Key;
-    }        
 }
 
 

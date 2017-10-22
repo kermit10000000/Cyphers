@@ -42,8 +42,7 @@ public:
  * @param[in] Key
  */
     VisionRE(std::string Text,
-        std::string Key,
-    );
+        std::string Key);
 
 /**
  * @brief Default constructor of VisionRE code object

@@ -14,7 +14,7 @@ ROT13::ROT13(std::string Text)
             : Text{Text} {
 }
 
-void ROT13::ROT13() {
+ROT13::ROT13() {
     this -> Text = " ";
 }
 
@@ -40,16 +40,7 @@ void ROT13::calculations(bool isEncryption){
             continue;
         }
             letter -= change_interval;
-            if(isEncryption) {
-                letter= (letter + ROT13_shift) % latin_alphabet;
-            }
-            //doing double rot13 encryption is decrypting the message 
-            else {
-                for (int i=0;i<2;i++) {
-                    letter= (letter + ROT13_shift) % latin_alphabet;
-                    
-                }
-            }
+            letter= (letter + ROT13_shift) % latin_alphabet;
             letter += change_interval;
             New_text += letter;
     }   

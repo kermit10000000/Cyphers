@@ -42,8 +42,7 @@ public:
  * @param[in] Key
  */
     XOR(std::string Text,
-        int8_t Key,
-    );
+        int8_t Key);
 
 /**
  * @brief Default constructor of XOR code object
