@@ -69,7 +69,7 @@ public:
   *
   * @return nothing
   */
-    void calculations(bool isEncryption);
+    void calculations();
     
 /**
   * @brief Setter for param Text

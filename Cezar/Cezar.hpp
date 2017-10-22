@@ -9,8 +9,8 @@
  *
  */
 
-#ifndef CEZAR_HPP
-#define CEZAR_HPP
+#ifndef Cezar_HPP
+#define Cezar_HPP
 
 #define ASCII_for_A 65
 #define ASCII_for_Z 90
@@ -95,5 +95,5 @@ public:
     
 };
 
-#endif // CEZAR_HPP
+#endif // Cezar_HPP
 

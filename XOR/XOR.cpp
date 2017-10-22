@@ -18,7 +18,7 @@ XOR::XOR(std::string Text, int8_t Key)
     } 
 }
 
-void XOR::XOR() {
+XOR::XOR() {
     this -> Text = " ";
     this -> Key = 0;
 }

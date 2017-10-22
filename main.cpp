@@ -10,10 +10,11 @@
  */
 
 
-#include Cezar.hpp
-#include XOR.hpp
-#include ROT13.hpp
-#include VisionRE.hpp
+
+#include "Cezar/Cezar.hpp"
+#include "XOR/XOR.hpp"
+#include "ROT13/ROT13.hpp"
+#include "VisionRE/VisionRE.hpp"
 
 int main(int argc, char *argv[]) {
     Cezar cezar_encryption("Army is marching with 20 thousand horses. Please send some support + boats.",20);
@@ -24,7 +25,7 @@ int main(int argc, char *argv[]) {
     
     ROT13 rot13_encryption("Rot13 is similar to Cezar encryption.");
     rot13_encryption.encryptMessage();
-    rot13_encryption.setText("Ohg vg nyjnlf fuvsg yrggref ol 13 naq qrpelcgvba vf qbhoyr rapelcgvba.");
+    rot13_encryption.setText("Ohg vg nyjnlf fuvsg yrggref ol 13 naq qrpelcgvba vf yvxr rapelcgvba.");
     rot13_encryption.decryptMessage();
     
     XOR xor_encryption("XOR encryption is same way as decryption",20);
